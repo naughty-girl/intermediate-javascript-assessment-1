@@ -175,3 +175,9 @@ function valueType(param1, param2){
 var theAnswer = "Unknown";
 
 // CODE HERE...
+function promiseCatcher(param){
+  console.log(param)
+  Promise.resolve(param).then(function(val){
+    theAnswer = val
+  })
+}
